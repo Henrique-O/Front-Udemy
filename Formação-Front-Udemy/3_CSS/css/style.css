@@ -1,0 +1,521 @@
+/* 4 - External CSS */
+body {
+    padding-bottom: 1000px;
+}
+
+h3 {
+    color: green;
+}
+
+/* Classes */
+.paragraph {
+    background-color: black;
+    color: aquamarine;
+    font-size: 30px;
+    padding: 8px;
+}
+
+#exclusie-title {
+    background-color: purple;
+    color: yellow;
+    font-size: 30px;
+    padding: 8px;
+}
+
+/* 10 - Ordem das regras */
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.titulo {
+    border-bottom: 4px solid blue;
+}
+
+#algum-titulo {
+    border-bottom: 6px solid green;
+}
+
+/* Nome de cores */
+
+.colorName {
+    color: crimson;
+}
+
+/* Hexadecimal */
+.hex {
+    color: #55a398;
+}
+
+.hex2 {
+    color: #f5a398;
+}
+
+/* Aprofundando em hexadecimal */
+.simpleHex {
+    color: #333;
+}
+
+.simpleHex2 {
+    color: #a5f;
+}
+
+/* RGB */
+.rgb {
+    color: rgb(255, 0, 0);
+}
+
+.rgb2 {
+    color: rgb(223, 97, 216);
+}
+
+/* RGBa */
+.rgba {
+    color: rgba(32, 221, 15, 0.3);
+}
+
+.rgba2 {
+    color: rgba(223, 97, 216, 0.1);
+}
+
+/* HSL */
+.hsl {
+    color: hsl(100, 20%, 50%);
+}
+
+.hsl2 {
+    color: hsl(201, 44%, 69%);
+}
+
+/* background Color */
+.bg {
+    background-color: #000;
+    color: white;
+    padding: 8px;
+}
+
+.bg2 {
+    background-color: rgb(255, 0, 0);
+    color: #00eaff;
+    padding: 8px;
+}
+
+/* Opacidade */
+.bgOpacity {
+    background-color: greenyellow;
+    opacity: 0.2;
+}
+
+.bgOpacity2 {
+    background-color: #999;
+    color: #000;
+    opacity: 0.8;
+}
+
+/* RGBa Opacidade */
+
+.rgbaOpacity {
+    background-color: rgba(32, 221, 15, 0.3);
+    color: black;
+}
+
+/* Imagem no fundo */
+.bgImg {
+    background-image: url(../img/naturezaNight.jpg);
+    padding: 8px;
+    color: white;
+}
+
+/* Centralizar bg img */
+.centerBg,
+.noCenterBg {
+    height: 400px;
+    width: 600px;
+    background-image: url(../img/horizon.png);
+}
+
+.centerBg {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Largura e altura */
+
+.widthHeight {
+    background-color: red;
+    width: 100px;
+    height: 200px;
+}
+
+.widthHeight2 {
+    background-color: rgb(119, 0, 255);
+    height: 200px;
+}
+
+/* Padding */
+
+.semPadding,
+.padding {
+    background-color: black;
+    color: white;
+}
+
+.padding {
+    padding: 32px;
+}
+
+/* Padding Individual (jeito ruim)*/
+.paddingInd {
+    background-color: black;
+    color: white;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 64px;
+    padding-left: 128px;
+}
+
+/* Padding Individual (jeito bom)*/
+.paddingIndShorthand {
+    background-color: black;
+    color: white;
+    padding: 16px 32px 64px 128px;
+}
+
+/* Border box aplicado*/
+
+.semBorderBox {
+    background-color: #333;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+}
+
+.BorderBox {
+    background-color: #333;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* Border */
+
+.border {
+    border: 8px solid red;
+    padding: 8px;
+}
+
+.border2 {
+    border: 2px dotted black;
+    padding: 8px;
+}
+
+/* Border Individual*/
+
+.borderLeft {
+    background-color: black;
+    color: white;
+    border-left: 8px solid purple;
+}
+
+.borderBottom {
+    background-color: black;
+    color: white;
+    border-bottom: 8px solid gold;
+}
+
+/* Arredondamento */
+
+.arredondada {
+    background-color: black;
+    color: blue;
+    padding: 16px;
+    border: 8px solid blue;
+    border-radius: 32px;
+}
+
+.arredondada2 {
+    background-color: black;
+    color: blue;
+    padding: 16px;
+    border-radius: 32px;
+}
+
+/* Margem */
+.margin{
+    background-color: black;
+    color: white;
+    margin: 16px ;
+}
+
+.marginTop{
+    background-color: #333;
+    color: white;
+    margin-top: 32px;
+    padding: 8px;
+}
+
+.marginShorthand{
+    background-color: #999;
+    margin: 8px 16px 32px 64px;
+}
+
+/* Box model */
+
+.boxModel {
+    background-color: black;
+    color: white;
+    margin: 64px;
+    padding: 32px;
+    border: 8px solid #333;
+    border-radius: 32px;
+}
+
+.h2 {
+    border: none;
+}
+
+/* Box Model Desafio 3 */
+
+#boxModelDesafio3 {
+    background-color: rgb(0, 255, 255);
+    color: black;
+    margin: 16px;
+    padding: 16px;
+    border: 8px solid #333;
+    border-radius: 32px;
+    outline: 8px solid #ff0000; /* Borda externa DEPOIS da margem */
+}
+
+.h2 {
+    border: none;
+}
+
+/* Alinhamento */
+.alinhamento {
+    text-align: right;
+}
+
+.center {
+    width: 300px;
+    border: 1px solid red;
+    text-align: center;
+}
+
+/* Estilização de texto */
+.underline{
+    text-decoration: underline;
+}
+
+.lineTrough{
+    text-decoration: line-through;
+}
+
+.removeUnderline {
+    color: red;
+    text-decoration: none;
+}
+
+/* text transform */
+.upper{
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+/* letter spacing */
+.spacing {
+    letter-spacing: 4px;
+}
+
+/* Fontes */
+
+.serif{
+    font-family: serif;
+}
+
+.sans-serif{
+    font-family: sans-serif;
+}
+
+.monospace{
+    font-family: monospace;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+/* Estilos fontes */
+
+.italic{
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+/* Font weight */
+
+.weight, .weight2, .weight3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.weight {
+    font-weight: 300;
+}
+
+.weight2{
+    font-weight: 500;
+}
+
+.weight3{
+    font-weight: 900;
+}
+
+/* Font size */
+
+.size{
+    font-size: 8px;
+}
+
+.size2{
+    font-size: 32px;
+}
+
+.size3{
+    font-size: 64px;
+}
+
+/* Display */
+.inlineBlock{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #a5f;
+    margin: 8px;
+}
+
+.block{
+    display: block;
+}
+
+/* None */
+.invisible{
+    display: none;
+}
+
+/* Posição static */
+.static {
+    position: static;
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 100px;
+}
+
+/* Posição relative */
+.relative{
+    position: relative;
+    background-color: #224;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 40px;
+}
+
+/* Posição absolute */
+.absolute{
+    position: absolute;
+    background-color: rgb(201, 155, 96);
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+}
+
+/* Relative e absolute*/
+
+.relativeAbsolute {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+}
+
+.absolute1, .absolute2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #00eaff;
+}
+
+.absolute1 {
+    top: 25px;
+    left: 25px;
+}
+
+.absolute2 {
+    bottom: 25px;
+    right: 25px;
+}
+
+/* fixed */
+.fixed {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: #a5f;
+    border: 1px solid blue;
+    top: 50px;
+    right: 50px;
+}
+
+/* sticky */
+.sticky {
+    position: sticky;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 1, 242);
+    border: 1px solid blue;
+    top: 50px;
+    right: 50px;
+}
+
+/* z index */
+
+.absolute3, .absolute4, .absolute5 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #00eaff;
+}
+
+.absolute3 {
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.absolute4 {
+    top: 10px;
+    left: 10px;
+    background-color: #f5a398;
+    z-index: 2;
+}
+
+.absolute5 {
+    top: 40px;
+    left: 40px;
+    background-color: #a5f;
+    z-index: 1;
+}
+

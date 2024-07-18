@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Venda seu Console</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre seu Console para vender mais rápido!</h3>
+        </div>
+        <div class="formContainer">
+            <div class="formHeader">
+                <p>Formulário</p>
+            </div>
+            <div class="formBody">
+                <h1 class="formTitle">Venda fácil seu Console</h1>
+                <p>Descreva as características e marque os opcionais que ele possui</p>
+                <form>
+                    <div class="boxInput">
+                        <label for="title">Título do anúncio <span class="requiredField">*</span></label>
+                        <input type="text" name="title" id="title" class="block"
+                            placeholder="Um título para anunciar seu Console ou jogo" minlength="1" maxlength="30" required>
+                    </div>
+                    <div class="boxInput">
+                        <label for="price">Preço <span class="requiredField">*</span></label>
+                        <input type="number" name="price" id="price" class="block"
+                            placeholder="Defina o preço" minlength="1" maxlength="30" required>
+                    </div>
+                    <div class="boxInput">
+                        <label for="description">Descrição <span class="requiredField">*</span></label>
+                        <textarea name="description" id="description" class="block" placeholder="Aqui você coloca os detalhes Console ou jogo, por exemplo: Se ele tem algum arranhão"></textarea>
+                    </div>
+                    <div class="boxInput">
+                        <label for="brand">Marca <span class="requiredField">*</span></label>
+                        <input type="text" name="brand" id="brand" class="block"
+                            placeholder="Digite a marca do Console ou jogo" required>
+                    </div>
+                    <div class="boxInput">
+                        <label for="timeUsed">Tempo de uso <span class="requiredField">*</span></label>
+                        <input type="text" name="timeUsed" id="timeUsed" class="block"
+                            placeholder="Digite a quanto tempo você utiliza esse console ou jogo" required>
+                    </div>
+                    <div class="boxInput">
+                        <label for="purchaseDate">Data de compra <span class="requiredField">*</span></label>
+                        <input type="date" name="purchaseDate" id="purchaseDate" class="block" required>
+                    </div>
+                    <div class="boxInput">
+                        <p>Tipo do Console: <span class="requiredField">*</span></p>
+                        <input type="radio" id="slim" name="type">
+                        <label for="slim">Slim</label>
+                        <input type="radio" id="fat" name="type">
+                        <label for="fat">Normal</label>
+                        <input type="radio" id="pro" name="type">
+                        <label for="pro">Pro</label>
+                    </div>
+                    <div class="optionalBox">
+                        <p>Informações a mais</p>
+                        <ul class="optionalList">
+                            <li>
+                                <input type="checkbox" id="camera" name="opitonal[]" value="camera">
+                                <label for="camera">Tem a câmera </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="remoteContoler" name="opitonal[]" value="remoteContoler">
+                                <label for="remoteContoler">Tem o Controle Remoto</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="usb_C" name="opitonal[]" value="usb_C">
+                                <label for="usb_C">Cabo USB-C</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="headset" name="opitonal[]" value="headset">
+                                <label for="headset">Headset</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optionalBox">
+                        <ul class="optionalList">
+                            <li>
+                                <input type="checkbox" id="thirdPerson" name="opitonal[]" value="thirdPerson">
+                                <label for="thirdPerson">Terceira pessoa</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="FirstPerson" name="opitonal[]" value="FirstPerson">
+                                <label for="FirstPerson">Primeira Pessoa</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="actionAdventure" name="opitonal[]" value="actionAdventure">
+                                <label for="actionAdventure">Ação e Aventura</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="multiplayer" name="opitonal[]" value="multiplayer">
+                                <label for="multiplayer">Multiplayer</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="boxInput">
+                        <p>Fotos do Console ou jogo: <span class="requiredField">*</span></p>
+                        <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required>
+                    </div>
+                    <input type="submit" value="Enviar" class="btnSubmit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

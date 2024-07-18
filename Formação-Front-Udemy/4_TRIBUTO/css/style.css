@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #F8F7F4;
+    --preto: #000000;
+    --azulFundo: #45678a;
+    --Azul: #afbfe1;
+}
+
+@font-face {
+    font-family: berserker;
+    src: url(asserts/font/Berserker-Regular.ttf);
+}
+
+html{
+    background-color: var(--azulFundo);
+}
+
+body {
+    width: auto;
+    overflow: auto;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: #fff;
+    /* Cor da neve */ 
+    font-size: 1em;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(200vh);
+    }
+}
+
+.conatiner {
+    background-color: var(--Azul);
+    max-width: 1100px;
+    position: relative;
+    margin: 32px auto;
+    padding: 64px;
+    /* margin: 32px 90px;
+    padding: 32px 90px; */
+}
+
+.title, .subTitle {
+    font-family: berserker;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.header {
+    text-align: center;
+}
+
+.title {
+    margin-top: 16px;
+}
+
+.subTitle {
+    font-style: italic;
+}
+
+.img {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.biography {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px 0;
+    padding: 32px;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+.quotes {
+    background-color: #ddd;
+    padding: 32px;
+}
+
+.quotes > blockquote {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.quotes > p {
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 16px;
+}
+
+.curiosities {
+    margin: 32px 0;
+    padding: 32px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+.curiosities > li {
+    margin-top: 16px;
+}
+
+.imgBold {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 32px;
+}

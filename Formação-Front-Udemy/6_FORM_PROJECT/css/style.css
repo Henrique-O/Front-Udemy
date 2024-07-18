@@ -1,0 +1,125 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0ebf8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+}
+
+p, label{
+    color: #444444;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    padding: 8px 0;
+}
+
+input[type="text"], input[type="number"], input[type="date"], input[type="file"], textarea {
+    width: 400px;
+}
+
+textarea {
+    padding: 8px;
+}
+
+/* Page header*/
+.header {
+    height: 128px;
+    padding: 24px;
+    background-color: #673ab7;
+}
+
+.header > h3 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+/* Form container */
+.formContainer {
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -62px;
+}
+
+/* Form Header */
+.formHeader {
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
+}
+
+.formHeader > p {
+    color: #673ab7;
+    border-bottom: 2px solid #673ab7;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+.formBody {
+    padding: 32px;
+}
+
+.formTitle {
+    margin-bottom: 16px;
+}
+
+.formBody > p{
+    margin-bottom: 24px;
+}
+
+.requiredField {
+    color: #d80835;
+}
+
+.boxInput {
+    margin-bottom: 32px;
+}
+
+.block {
+    display: block;
+}
+
+.optionalBox {
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+
+.optionalList  > li{
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.boxInput {
+    margin-bottom: 16px;
+}
+
+.btnSubmit {
+    background-color: #673ab7;
+    color: #ffffff;
+    border: 2px sold transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btnSubmit:hover{
+    background-color: #ffffff;
+    border: 2px solid #673ab7;
+    color: #673ab7;
+}
